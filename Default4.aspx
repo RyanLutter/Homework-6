@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default4.aspx.vb" Inherits="Default4" %>
 
 <!DOCTYPE html>
 
@@ -22,8 +22,6 @@
             </Items>
         </asp:Menu></span>
         <hr />
-        <asp:GridView ID="tableRecipes" runat="server">
-        </asp:GridView>
     </form>
     <p>
         <i>Copyright © 2014. Created by Ryan Lutter.</i></p>
