@@ -13,7 +13,7 @@
 
         <span class="header">RYAN&#39;S RECIPE WEBSITE</span></div>
 
-        <span class="header"><asp:Menu ID="NavigationBar" runat="server" Font-Bold="True" Font-Size="Large" Font-Underline="True" ForeColor="Red" Orientation="Horizontal" Width="100%">
+        <span class="header"><asp:Menu ID="NavigationBar" runat="server" Font-Bold="True" Font-Size="Large" Font-Underline="True" ForeColor="White" Orientation="Horizontal" Width="100%">
             <Items>
                 <asp:MenuItem Text="Home" NavigateUrl="~/Default.aspx"></asp:MenuItem>
                 <asp:MenuItem Text="New Recipe" NavigateUrl="~/Default2.aspx"></asp:MenuItem>
@@ -26,6 +26,7 @@
         </asp:GridView>
     </form>
     <p>
+        <hr />
         <i>Copyright © 2014. Created by Ryan Lutter.</i></p>
     </body>
 </html>
