@@ -17,8 +17,8 @@
             <Items>
                 <asp:MenuItem Text="Home" NavigateUrl="~/Default.aspx"></asp:MenuItem>
                 <asp:MenuItem Text="New Recipe" NavigateUrl="~/Default2.aspx"></asp:MenuItem>
-                <asp:MenuItem Text="About Us" NavigateUrl="~/Default3.aspx"></asp:MenuItem>
-                <asp:MenuItem Text="Contact Us" NavigateUrl="~/Default4.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="About Us" NavigateUrl="~/Default4.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Contact Us" NavigateUrl="~/Default3.aspx"></asp:MenuItem>
             </Items>
         </asp:Menu></span>
         <hr />

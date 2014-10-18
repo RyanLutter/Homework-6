@@ -1,6 +1,5 @@
 ﻿body {
     background-color: tan;
-    text-align: center;
 }
 
 .header {
@@ -13,4 +12,57 @@
 
 .center {
     text-align: center;
+}
+
+.gridview {background-color: coral; 
+           border: solid 2px #FFFFFF; 
+           border-collapse:collapse; 
+           font-family:Arial; 
+           color: #696969;
+           text-align: center;
+}
+
+.gridview td {
+      padding: 2px;
+      border: solid 2px #FFFFFF; 
+
+}
+
+.gridview th  {
+      padding : 4px 2px;
+      color: coral;
+      background-color: #FFFF99;
+      border-left: solid 2px #FFFFFF;
+      font-family:Arial; 
+      font-size: 1.25em; 
+      text-align: center;
+}
+
+.gridview .alt {
+        background-color: #FFFF99;
+    }
+
+
+.detailview {background-color: white; 
+           border: solid 2px #000000; 
+           border-collapse:collapse; 
+           font-family:Arial; 
+           color: coral;
+           text-align: center;
+}
+
+.detailview td {
+      padding: 2px;
+      border: solid 2px #000000; 
+
+}
+
+.detailview th  {
+      padding : 4px 2px;
+      color: coral;
+      background-color: #FFFF99;
+      border-left: solid 2px #000000;
+      font-family:Arial; 
+      font-size: 1.25em; 
+      text-align: center;
 }

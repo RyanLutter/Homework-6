@@ -17,8 +17,8 @@
             <Items>
                 <asp:MenuItem Text="Home" NavigateUrl="~/Default.aspx"></asp:MenuItem>
                 <asp:MenuItem Text="New Recipe" NavigateUrl="~/Default2.aspx"></asp:MenuItem>
-                <asp:MenuItem Text="About Us" NavigateUrl="~/Default3.aspx"></asp:MenuItem>
-                <asp:MenuItem Text="Contact Us" NavigateUrl="~/Default4.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="About Us" NavigateUrl="~/Default4.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Contact Us" NavigateUrl="~/Default3.aspx"></asp:MenuItem>
             </Items>
         </asp:Menu></span>
         <hr />
@@ -52,8 +52,7 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <p>
-            <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="recipeID" DataSourceID="sqlNewRecipe" DefaultMode="Insert" Height="50px" Width="431px">
-                <EditRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+            <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="sqlNewRecipe" DefaultMode="Insert" Height="50px" Width="431px" CssClass="detailview">
                 <Fields>
                     <asp:BoundField DataField="recipeID" HeaderText="recipeID" InsertVisible="False" ReadOnly="True" SortExpression="recipeID" Visible="False" />
                     <asp:BoundField DataField="recipeName" HeaderText="Recipe Name" SortExpression="recipeName" />
@@ -63,14 +62,10 @@
                     <asp:BoundField DataField="Ingred3" HeaderText="Ingredient 3" SortExpression="Ingred3" />
                     <asp:BoundField DataField="Ingred4" HeaderText="Ingredient 4" SortExpression="Ingred4" />
                     <asp:BoundField DataField="Ingred5" HeaderText="Ingredient 5" SortExpression="Ingred5" />
-                    <asp:BoundField DataField="Prep" HeaderText="Prep" SortExpression="Prep" />
+                    <asp:BoundField DataField="Prep" HeaderText="Preparation" SortExpression="Prep" />
                     <asp:BoundField DataField="Notes" HeaderText="Notes" SortExpression="Notes" />
                     <asp:CommandField ShowInsertButton="True" />
                 </Fields>
-                <FooterStyle BackColor="White" ForeColor="#000066" />
-                <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
-                <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
-                <RowStyle ForeColor="#000066" />
             </asp:DetailsView>
     </form>
         <hr />

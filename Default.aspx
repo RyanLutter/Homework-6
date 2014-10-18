@@ -17,8 +17,8 @@
             <Items>
                 <asp:MenuItem Text="Home" NavigateUrl="~/Default.aspx"></asp:MenuItem>
                 <asp:MenuItem Text="New Recipe" NavigateUrl="~/Default2.aspx"></asp:MenuItem>
-                <asp:MenuItem Text="About Us" NavigateUrl="~/Default3.aspx"></asp:MenuItem>
-                <asp:MenuItem Text="Contact Us" NavigateUrl="~/Default4.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="About Us" NavigateUrl="~/Default4.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Contact Us" NavigateUrl="~/Default3.aspx"></asp:MenuItem>
             </Items>
         </asp:Menu>
         <hr />
@@ -51,21 +51,12 @@
                 <asp:Parameter Name="recipeID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <asp:GridView ID="tableRecipes" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="recipeID" DataSourceID="sqlRecipes" PageSize="15">
+        <asp:GridView ID="tableRecipes" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="sqlRecipes" PageSize="15" CssClass="gridview">
             <Columns>
                 <asp:BoundField DataField="recipeName" HeaderText="Recipe Name" SortExpression="recipeName" />
                 <asp:BoundField DataField="submittedBy" HeaderText="Submitted By" SortExpression="submittedBy" />
                 <asp:CommandField ShowSelectButton="True" />
             </Columns>
-            <FooterStyle BackColor="White" ForeColor="#000066" />
-            <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
-            <RowStyle ForeColor="#000066" />
-            <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
-            <SortedAscendingCellStyle BackColor="#F1F1F1" />
-            <SortedAscendingHeaderStyle BackColor="#007DBB" />
-            <SortedDescendingCellStyle BackColor="#CAC9C9" />
-            <SortedDescendingHeaderStyle BackColor="#00547E" />
         </asp:GridView>
     </form>
     <p>
