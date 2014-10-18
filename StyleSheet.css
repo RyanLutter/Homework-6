@@ -1,0 +1,14 @@
+﻿body {
+}
+
+.header {
+    font-size: xx-large;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Bell MT";
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
