@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default3.aspx.vb" Inherits="Default3" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="contactus.aspx.vb" Inherits="Default3" %>
 
 <!DOCTYPE html>
 
@@ -15,10 +15,10 @@
 
         <span class="header"><asp:Menu ID="NavigationBar" runat="server" Font-Bold="True" Font-Size="Large" Font-Underline="True" ForeColor="White" Orientation="Horizontal" Width="100%">
             <Items>
-                <asp:MenuItem Text="Home" NavigateUrl="~/Default.aspx"></asp:MenuItem>
-                <asp:MenuItem Text="New Recipe" NavigateUrl="~/Default2.aspx"></asp:MenuItem>
-                <asp:MenuItem Text="About Us" NavigateUrl="~/Default4.aspx"></asp:MenuItem>
-                <asp:MenuItem Text="Contact Us" NavigateUrl="~/Default3.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Home" NavigateUrl="~/default.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="New Recipe" NavigateUrl="~/recipe.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="About Us" NavigateUrl="~/aboutus.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Contact Us" NavigateUrl="~/contactus.aspx"></asp:MenuItem>
             </Items>
         </asp:Menu></span>
         <hr />
