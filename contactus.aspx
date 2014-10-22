@@ -13,14 +13,17 @@
 
         <span class="header">RYAN&#39;S RECIPE WEBSITE</span></div>
 
-        <span class="header"><asp:Menu ID="NavigationBar" runat="server" Font-Bold="True" Font-Size="Large" Font-Underline="True" ForeColor="White" Orientation="Horizontal" Width="100%">
+        <span class="header"><asp:Menu ID="NavigationBar" runat="server" Font-Bold="True" Font-Size="Large" Font-Underline="False" ForeColor="White" Orientation="Horizontal" CssClass="menu" RenderingMode="Table" Width="100%">
             <Items>
                 <asp:MenuItem Text="Home" NavigateUrl="~/default.aspx"></asp:MenuItem>
                 <asp:MenuItem Text="New Recipe" NavigateUrl="~/recipe.aspx"></asp:MenuItem>
                 <asp:MenuItem Text="About Us" NavigateUrl="~/aboutus.aspx"></asp:MenuItem>
                 <asp:MenuItem Text="Contact Us" NavigateUrl="~/contactus.aspx"></asp:MenuItem>
             </Items>
-        </asp:Menu></span>
+            <StaticHoverStyle ForeColor="Black" />
+            <StaticMenuStyle BorderStyle="None" />
+        </asp:Menu>
+        </span>
         <hr />
 
         <!-- Check to see if you are in postback.  If not, display the contact form. -->

@@ -13,19 +13,22 @@
 
         <span class="header">RYAN&#39;S RECIPE WEBSITE</span></div>
 
-        <span class="header"><asp:Menu ID="NavigationBar" runat="server" Font-Bold="True" Font-Size="Large" Font-Underline="True" ForeColor="White" Orientation="Horizontal" Width="100%">
+        <span class="header"><asp:Menu ID="NavigationBar" runat="server" Font-Bold="True" Font-Size="Large" Font-Underline="False" ForeColor="White" Orientation="Horizontal" CssClass="menu" RenderingMode="Table" Width="100%">
             <Items>
                 <asp:MenuItem Text="Home" NavigateUrl="~/default.aspx"></asp:MenuItem>
                 <asp:MenuItem Text="New Recipe" NavigateUrl="~/recipe.aspx"></asp:MenuItem>
                 <asp:MenuItem Text="About Us" NavigateUrl="~/aboutus.aspx"></asp:MenuItem>
                 <asp:MenuItem Text="Contact Us" NavigateUrl="~/contactus.aspx"></asp:MenuItem>
             </Items>
-        </asp:Menu></span>
+            <StaticHoverStyle ForeColor="Black" />
+            <StaticMenuStyle BorderStyle="None" />
+        </asp:Menu>
+        </span>
         <hr />
     <p>
-         <asp:Image ID="Image1" runat="server" BorderWidth="2px" Height="200px" ImageAlign="Top" ImageUrl="~/Images/cooking.jpg" Width="32.75%" BorderColor="Black" style="margin-top: 0px" />
-            <asp:Image ID="Image2" runat="server" Height="200px" ImageUrl="~/Images/recipe.jpg" Width="32.75%" BorderColor="Black" BorderWidth="2px" />
-        <asp:Image ID="Image3" runat="server" Height="200px" ImageUrl="~/Images/food.jpg" Width="32.75%" BorderColor="Black" BorderWidth="2px" />
+         <asp:Image ID="Image1" runat="server" BorderWidth="2px" Height="200px" ImageAlign="Top" ImageUrl="~/Images/cooking.jpg" Width="30%" BorderColor="Black" style="margin-top: 0px" />
+            <asp:Image ID="Image2" runat="server" Height="200px" ImageUrl="~/Images/recipe.jpg" Width="30%" BorderColor="Black" BorderWidth="2px" />
+        <asp:Image ID="Image3" runat="server" Height="200px" ImageUrl="~/Images/food.jpg" Width="30%" BorderColor="Black" BorderWidth="2px" />
         <p>
         <span class="aboutUS">Are you getting tired of having to get fast food or sit-down meals every single night? Are you running out of ideas of things to make at home? Ryan said YES to all of these things as well. That&#39;s why he decided to make Ryan&#39;s Recipe Website - a recipe site with recipes that are going to list all of the ingredients and necessary steps to create a perfect 
             dish!
