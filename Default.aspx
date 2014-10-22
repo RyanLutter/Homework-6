@@ -55,7 +55,7 @@
             <Columns>
                 <asp:BoundField DataField="recipeName" HeaderText="Recipe Name" SortExpression="recipeName" />
                 <asp:BoundField DataField="submittedBy" HeaderText="Submitted By" SortExpression="submittedBy" />
-                <asp:CommandField ShowSelectButton="True" />
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Columns>
         </asp:GridView>
     </form>

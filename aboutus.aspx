@@ -22,12 +22,17 @@
             </Items>
         </asp:Menu></span>
         <hr />
-    </form>
     <p>
-        Are you getting tired of having to get fast food or sit-down meals every single night? Are you running out of ideas of things to make at home? Ryan said YES to all of these things as well. That&#39;s why he decided to make Ryan&#39;s Recipe Website - a recipe site with recipes that are going to list all of the ingredients and necessary steps to create a perfect dish!<p>
-        Ryan wants YOU to add your recipe to his website! I know that a lot of people are blogging on their own websites, but lets make a central location where we can store all the different types of recipes and let everyone enjoy them.
+         <asp:Image ID="Image1" runat="server" BorderWidth="2px" Height="200px" ImageAlign="Top" ImageUrl="~/Images/cooking.jpg" Width="32.75%" BorderColor="Black" style="margin-top: 0px" />
+            <asp:Image ID="Image2" runat="server" Height="200px" ImageUrl="~/Images/recipe.jpg" Width="32.75%" BorderColor="Black" BorderWidth="2px" />
+        <asp:Image ID="Image3" runat="server" Height="200px" ImageUrl="~/Images/food.jpg" Width="32.75%" BorderColor="Black" BorderWidth="2px" />
         <p>
-            If you have any questions or concerns, please visit the Contact Us page. Thanks!<hr />
+        <span class="aboutUS">Are you getting tired of having to get fast food or sit-down meals every single night? Are you running out of ideas of things to make at home? Ryan said YES to all of these things as well. That&#39;s why he decided to make Ryan&#39;s Recipe Website - a recipe site with recipes that are going to list all of the ingredients and necessary steps to create a perfect 
+            dish!
+        </span><p class="aboutUS"> Ryan wants YOU to add your recipe to his website! I know that a lot of people are blogging on their own websites, but lets make a central location where we can store all the different types of recipes and let everyone enjoy them.
+            We have to start somewhere!<p class="aboutUS">
+        If you have any questions or concerns, please visit the Contact Us page. Thanks you :)</form>
+    <hr />
         <i>Copyright © 2014. Created by Ryan Lutter.</i></p>
     </body>
 </html>

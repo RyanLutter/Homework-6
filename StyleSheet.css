@@ -66,3 +66,12 @@
       font-size: 1.25em; 
       text-align: center;
 }
+.aboutUS {
+    font-family: "Segoe Print";
+    font-size: medium;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+    text-align: justify;
+}
+
