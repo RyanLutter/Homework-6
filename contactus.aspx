@@ -52,6 +52,6 @@
     </form>
         <p>
         <hr />
-        <i>Copyright © 2014. Created by Ryan Lutter.</i></p>
+        <i class="footer">Copyright © 2014. Created by Ryan Lutter.</i></p>
     </body>
 </html>

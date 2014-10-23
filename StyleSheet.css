@@ -30,7 +30,7 @@
            border: solid 2px #FFFFFF; 
            border-collapse:collapse; 
            font-family:Arial; 
-           color: #696969;
+           color: white;
            text-align: center;
 }
 
@@ -42,7 +42,7 @@
 
 .gridview th  {
       padding : 4px 2px;
-      color: coral;
+      color: #696969;
       background-color: #FFFF99;
       border-left: solid 2px #FFFFFF;
       font-family:Arial; 
@@ -88,3 +88,18 @@
     text-align: justify;
 }
 
+.select {
+    text-decoration: none;
+    color: #696969;
+}
+
+.details {
+    font-weight: 700;
+    font-size: large;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: Arial;
+}
+.footer {
+    font-weight: bold;
+}

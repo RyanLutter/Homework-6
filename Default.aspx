@@ -57,12 +57,14 @@
             <Columns>
                 <asp:BoundField DataField="recipeName" HeaderText="Recipe Name" SortExpression="recipeName" />
                 <asp:BoundField DataField="submittedBy" HeaderText="Submitted By" SortExpression="submittedBy" />
-                <asp:CommandField ShowSelectButton="True" />
+                <asp:HyperLinkField DataNavigateUrlFields="recipeID" DataNavigateUrlFormatString="view.aspx?recipeID={0}" Text="Select">
+                <ControlStyle CssClass="select" />
+                </asp:HyperLinkField>
             </Columns>
         </asp:GridView>
     </form>
     <p>
         <hr />
-        <i>Copyright © 2014. Created by Ryan Lutter.</i></p>
+        <i class="footer">Copyright © 2014. Created by Ryan Lutter.</i></p>
     </body>
 </html>
