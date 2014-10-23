@@ -4,6 +4,13 @@
 <head runat="server">
     <title></title>
     <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .newStyle1 {
+            font-size: x-large;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -23,7 +30,8 @@
         </asp:Menu>
         </span>
         <hr />
-
+           
+        
     <p>
                     <asp:SqlDataSource ID="sqlView" runat="server" ConnectionString="<%$ ConnectionStrings:rlutter_HW6 %>" DeleteCommand="DELETE FROM [rlutter_HW6] WHERE [recipeID] = @recipeID" InsertCommand="INSERT INTO [rlutter_HW6] ([recipeName], [submittedBy], [Ingred1], [Ingred2], [Ingred3], [Ingred4], [Ingred5], [Prep], [Notes]) VALUES (@recipeName, @submittedBy, @Ingred1, @Ingred2, @Ingred3, @Ingred4, @Ingred5, @Prep, @Notes)" SelectCommand="SELECT * FROM [rlutter_HW6] WHERE ([recipeID] = @recipeID)" UpdateCommand="UPDATE [rlutter_HW6] SET [recipeName] = @recipeName, [submittedBy] = @submittedBy, [Ingred1] = @Ingred1, [Ingred2] = @Ingred2, [Ingred3] = @Ingred3, [Ingred4] = @Ingred4, [Ingred5] = @Ingred5, [Prep] = @Prep, [Notes] = @Notes WHERE [recipeID] = @recipeID">
                         <DeleteParameters>
@@ -57,7 +65,7 @@
                         </UpdateParameters>
                     </asp:SqlDataSource>
                     <p>
-                    <span class="details">DETAILS OF SELECTed RECIPE</span><p>
+                    <span class="details"><asp:Label ID="details" runat="server" Text="DETAILS OF SELECTED RECIPE"></asp:Label></span><p>
                     <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="sqlView" Height="50px" Width="431px" CssClass="detailview" HorizontalAlign="Center">
                         <Fields>
                             <asp:BoundField DataField="recipeID" HeaderText="recipeID" InsertVisible="False" ReadOnly="True" SortExpression="recipeID" Visible="False" />
@@ -74,9 +82,13 @@
                         </Fields>
                     </asp:DetailsView>
 
+        <p>           
+                    <asp:Label ID="label_deletedRecipe" runat="server" CssClass="newStyle1"></asp:Label>
+        </p>
+
     </form>
         <hr />
-        <i class="footer">Copyright © 2014. Created by Ryan Lutter.</i></p>
+        <i class="footer">Copyright © 2014. Created by Ryan Lutter.</i>
     </body>
 </html>
 
