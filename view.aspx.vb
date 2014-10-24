@@ -14,6 +14,13 @@ Partial Class view
     End Sub
 
     Protected Sub DetailsView1_ItemUpdated(sender As Object, e As DetailsViewUpdatedEventArgs) Handles DetailsView1.ItemUpdated
-        Response.Redirect("./Default.aspx")
+        details.Visible = False
+        DetailsView1.Visible = False
+
+        Dim updatedRecipe As String = e.NewValues("recipeName").ToString()
+
+        label_deletedRecipe.Text = updatedRecipe & " has been updated in the database."
+
+        Response.AppendHeader("Refresh", "3;url=./Default.aspx")
     End Sub
 End Class
