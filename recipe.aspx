@@ -61,8 +61,8 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <p>
-            <asp:FormView ID="FormView1" runat="server" DataKeyNames="recipeID" DataSourceID="sqlNewRecipe" DefaultMode="Insert" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" HeaderText="New Recipe" HorizontalAlign="Center" BackColor="#FFFF99" CssClass="center" Width="446px">
-                <HeaderStyle Font-Bold="True" BackColor="#FFFF99" />
+            <asp:FormView ID="FormView1" runat="server" DataKeyNames="recipeID" DataSourceID="sqlNewRecipe" DefaultMode="Insert" BorderStyle="None" HeaderText="NEW RECIPE" HorizontalAlign="Center" BackColor="#FFFF99" Width="464px">
+                <HeaderStyle Font-Bold="True" BackColor="#FFFF99" Font-Size="X-Large" Font-Underline="True" />
                 <InsertItemTemplate>
                     <table>
                         <tr>
