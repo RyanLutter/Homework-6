@@ -103,3 +103,9 @@
 .footer {
     font-weight: bold;
 }
+
+.validation{
+    color: red;
+    font-weight: bold;
+    text-align:right;
+}

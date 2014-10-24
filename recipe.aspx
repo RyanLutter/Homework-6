@@ -6,6 +6,12 @@
 <head runat="server">
     <title></title>
     <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 128px;
+        }
+        .center {}
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -55,94 +61,105 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <p>
-            <asp:FormView ID="FormView1" runat="server" DataKeyNames="recipeID" DataSourceID="sqlNewRecipe" DefaultMode="Insert" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" HeaderText="New Recipe" HorizontalAlign="Center">
-                <EditItemTemplate>
-                </EditItemTemplate>
-                <HeaderStyle Font-Bold="True" />
+            <asp:FormView ID="FormView1" runat="server" DataKeyNames="recipeID" DataSourceID="sqlNewRecipe" DefaultMode="Insert" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" HeaderText="New Recipe" HorizontalAlign="Center" BackColor="#FFFF99" CssClass="center" Width="446px">
+                <HeaderStyle Font-Bold="True" BackColor="#FFFF99" />
                 <InsertItemTemplate>
                     <table>
                         <tr>
-                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;">
+                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;" class="auto-style3">
                                  Recipe Name:
                             </td>
-                            <td>
+                            <td class="auto-style1">
                                    <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("recipeName") %>' BackColor="LightCoral" />
+                            </td> 
+                            <td>
+                                <asp:RequiredFieldValidator ID="rfv_Name" runat="server" ErrorMessage="Please enter a recipe name." ControlToValidate="TextBox1" CssClass="validation"></asp:RequiredFieldValidator>
                             </td>
+
                         </tr>
                         <tr>
-                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;">
+                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;" class="auto-style3">
                                 Submitted By:
                             </td>
-                            <td>
+                            <td class="auto-style1">
                                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("submittedBy") %>' BackColor="LightCoral" />
                             </td>
+                            <td>
+                                <asp:RequiredFieldValidator ID="rfv_Submitted" runat="server" ErrorMessage="Please enter your name." ControlToValidate="TextBox2" CssClass="validation"></asp:RequiredFieldValidator>
+                            </td>
                         </tr>
                         <tr>
-                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;">
+                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;" class="auto-style3">
                                 Ingredient 1:
                             </td>
-                            <td>
+                            <td class="auto-style1">
                                <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("Ingred1") %>' BackColor="LightCoral" />
+                            </td>
+                            <td>
+                                <asp:RequiredFieldValidator ID="rfv_Ingred" runat="server" ErrorMessage="Please enter a ingredient." ControlToValidate="TextBox3" CssClass="validation"></asp:RequiredFieldValidator>
                             </td>
                         </tr>
                         <tr>
-                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;">
+                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;" class="auto-style3">
                                 Ingredient 2:
                             </td>
-                            <td>
+                            <td class="auto-style1">
                                <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("Ingred2")%>' BackColor="LightCoral" />
                             </td>
                         </tr>
                         <tr>
-                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;">
+                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;" class="auto-style3">
                                 Ingredient 3:
                             </td>
-                            <td>
+                            <td class="auto-style1">
                                <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("Ingred3")%>' BackColor="LightCoral" />
                             </td>
                         </tr>
                         <tr>
-                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;">
+                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;" class="auto-style3">
                                 Ingredient 4:
                             </td>
-                            <td>
+                            <td class="auto-style1">
                                <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("Ingred4")%>' BackColor="LightCoral" />
                             </td>
                         </tr>
                         <tr>
-                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;">
+                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;" class="auto-style3">
                                 Ingredient 5:
                             </td>
-                            <td>
+                            <td class="auto-style1">
                                <asp:TextBox ID="TextBox7" runat="server" Text='<%# Bind("Ingred5")%>' BackColor="LightCoral" />
                             </td>
                         </tr> 
                         <tr>
-                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;">
+                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;" class="auto-style3">
                                 Preparation: 
                             </td>
-                            <td>
+                            <td class="auto-style1">
                                <asp:TextBox ID="TextBox8" runat="server" Text='<%# Bind("Prep") %>' BackColor="LightCoral" />
+                            </td>
+                            <td>
+                                <asp:RequiredFieldValidator ID="rfv_Prep" runat="server" ErrorMessage="Please enter preparation." ControlToValidate="TextBox8" CssClass="validation"></asp:RequiredFieldValidator>
                             </td>
                         </tr>
                         <tr>
-                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;">
+                            <td style="text-align:right; background-color:white; color:#696969; font-weight:bold;" class="auto-style3">
                                 Notes:
                             </td>
-                            <td>
+                            <td class="auto-style1">
                                <asp:TextBox ID="TextBox9" runat="server" Text='<%# Bind("Notes") %>' BackColor="LightCoral" />
                             </td>
                         </tr>
-                        <td>       
-                        <asp:Button ID="insertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" BackColor="LightCoral" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" />
-                        <asp:Button ID="cancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" BackColor="LightCoral" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" />
-                        </td>
+                        <tr>
+                           <td></td>
+                            <td class="auto-style1">
+                                <asp:Button ID="insertButton" runat="server" BackColor="LightCoral" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" CausesValidation="True" CommandName="Insert" CssClass="center" Text="Insert" />
+                                <asp:Button ID="cancelButton" runat="server" BackColor="LightCoral" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" CausesValidation="False" CommandName="Cancel" CssClass="center" Text="Cancel" />
+                            </td>
+                        </tr>
                     </Table>
 
                 </InsertItemTemplate>
-                <ItemTemplate>
-                    
-                </ItemTemplate>
             </asp:FormView>
         <p>
             &nbsp;</form>
