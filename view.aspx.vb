@@ -3,8 +3,8 @@ Partial Class view
     Inherits System.Web.UI.Page
 
     Protected Sub DetailsView1_ItemDeleted(sender As Object, e As DetailsViewDeletedEventArgs) Handles DetailsView1.ItemDeleted
-
         details.Visible = False
+        DetailsView1.Visible = False
 
         Dim deletedRecipe As String = e.Values("recipeName").ToString()
 

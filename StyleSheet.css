@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: tan;
+    background-color: #D2B48C;
     width:750px;
 	margin:0px auto;
 	text-align:center;
@@ -26,7 +26,7 @@
 }
 
 
-.gridview {background-color: coral; 
+.gridview {background-color: #F08080;
            border: solid 2px #FFFFFF; 
            border-collapse:collapse; 
            font-family:Arial; 
@@ -59,7 +59,7 @@
            border: solid 2px #000000; 
            border-collapse:collapse; 
            font-family:Arial; 
-           color: coral;
+           color:  #F08080;
            text-align: center;
 }
 
@@ -71,7 +71,7 @@
 
 .detailview th  {
       padding : 4px 2px;
-      color: coral;
+      color:  #F08080;
       background-color: #FFFF99;
       border-left: solid 2px #000000;
       font-family:Arial; 
