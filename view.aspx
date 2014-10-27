@@ -161,10 +161,16 @@
                                <asp:TextBox ID="TextBox9" runat="server" Text='<%# Bind("Notes") %>' BackColor="LightCoral" ReadOnly="True" />
                             </td>
                         </tr>
+                            <tr>
+                           <td></td>
+                            <td class="auto-style1">
+                                <asp:Button ID="deleteButton" runat="server" BackColor="LightCoral" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" CausesValidation="True" CommandName="Delete" CssClass="center" Text="Delete" />
+                            </td>
+                        </tr>
                         </ItemTemplate>
                     </asp:FormView>
                     <p>
-                    <asp:Button ID="masterButton" runat="server" BackColor="LightCoral" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" CssClass="center" Text="Edit or Delete Recipe" Width="150px" />
+                    <asp:Button ID="masterButton" runat="server" BackColor="LightCoral" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" CssClass="center" Text="Edit Recipe" Width="150px" />
                     </p>
                     <asp:FormView ID="editForm" runat="server" DataKeyNames="recipeID" DataSourceID="sqlView" HorizontalAlign="Center" DefaultMode="Edit" BackColor="#FFFF99" BorderStyle="None" HeaderText="SELECTED RECIPE">
                         <EditItemTemplate>
@@ -256,7 +262,7 @@
                         <tr>
                            <td></td>
                             <td class="auto-style1">
-                                <asp:Button ID="deleteButton" runat="server" BackColor="LightCoral" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" CausesValidation="True" CommandName="Delete" CssClass="center" Text="Delete" />
+                                <asp:Button ID="cancelButton" runat="server" BackColor="LightCoral" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" CausesValidation="False" CommandName="Cancel" CssClass="center" Text="Cancel" />
                                 <asp:Button ID="updateButton" runat="server" BackColor="LightCoral" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" CausesValidation="True" CommandName="Update" CssClass="center" Text="Update" />
                             </td>
                         </tr>
