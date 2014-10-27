@@ -7,6 +7,7 @@ Partial Class Default3
     Inherits System.Web.UI.Page
 
     Protected Sub sendMail_Click(sender As Object, e As EventArgs) Handles sendMail.Click
+
         'Declare variables to create a new mail message and client connection.
         Dim msg As New MailMessage
         Dim client As New SmtpClient
@@ -28,7 +29,7 @@ Partial Class Default3
         senderMessage.Text = ""
 
         'Write into the label that the message has been sent.
-        confirmSent.Text = "Thank you.  Your message has been sent."
+        confirmSent.Text = "Thank you.  Your message has been sent to Ryan Lutter."
 
         'After the message has displayed for 2 seconds, "reload" the page.
         Response.AddHeader("REFRESH", "2;URL=default.aspx")

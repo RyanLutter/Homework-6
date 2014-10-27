@@ -17,12 +17,12 @@
     text-align: center;
 }
 
-
 .menu {
     text-align: center;
     align-items: center;
     align-content: center;
     align-self: center;
+    margin:0px auto;
 }
 
 
